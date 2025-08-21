@@ -1,0 +1,26 @@
+# Dockerfile для разработки
+FROM node:18-alpine
+
+# Устанавливаем зависимости
+RUN apk add --no-cache libc6-compat
+
+WORKDIR /app
+
+# Копируем файлы зависимостей
+COPY package.json pnpm-lock.yaml* ./
+
+# Устанавливаем pnpm и зависимости
+RUN npm install -g pnpm && pnpm install
+
+# Копируем исходный код
+COPY . .
+
+# Открываем порт
+EXPOSE 3000
+
+# Переменные окружения для разработки
+ENV NODE_ENV=development
+ENV NEXT_TELEMETRY_DISABLED=1
+
+# Запускаем в режиме разработки
+CMD ["pnpm", "dev"]

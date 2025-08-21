@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import '../assets/icons/light/icons.scss';
+
+:root{
+/* CSS HEX */
+--baby-powder: #F1F4EDff;
+--rich-black: #001014ff;
+--cadet-gray: #919C98ff;
+--field-drab: #665333ff;
+--black-olive: #42433Dff;
+
+/* CSS HSL */
+--baby-powder: hsla(86, 24%, 94%, 1);
+--rich-black: hsla(192, 100%, 4%, 1);
+--cadet-gray: hsla(158, 5%, 59%, 1);
+--field-drab: hsla(38, 33%, 30%, 1);
+--black-olive: hsla(70, 5%, 25%, 1);
+
+/* SCSS HEX */
+$baby-powder: #F1F4EDff;
+$rich-black: #001014ff;
+$cadet-gray: #919C98ff;
+$field-drab: #665333ff;
+$black-olive: #42433Dff;
+
+/* SCSS HSL */
+$baby-powder: hsla(86, 24%, 94%, 1);
+$rich-black: hsla(192, 100%, 4%, 1);
+$cadet-gray: hsla(158, 5%, 59%, 1);
+$field-drab: hsla(38, 33%, 30%, 1);
+$black-olive: hsla(70, 5%, 25%, 1);
+
+/* SCSS RGB */
+$baby-powder: rgba(241, 244, 237, 1);
+$rich-black: rgba(0, 16, 20, 1);
+$cadet-gray: rgba(145, 156, 152, 1);
+$field-drab: rgba(102, 83, 51, 1);
+$black-olive: rgba(66, 67, 61, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #F1F4EDff, #001014ff, #919C98ff, #665333ff, #42433Dff);
+$gradient-right: linear-gradient(90deg, #F1F4EDff, #001014ff, #919C98ff, #665333ff, #42433Dff);
+$gradient-bottom: linear-gradient(180deg, #F1F4EDff, #001014ff, #919C98ff, #665333ff, #42433Dff);
+$gradient-left: linear-gradient(270deg, #F1F4EDff, #001014ff, #919C98ff, #665333ff, #42433Dff);
+$gradient-top-right: linear-gradient(45deg, #F1F4EDff, #001014ff, #919C98ff, #665333ff, #42433Dff);
+$gradient-bottom-right: linear-gradient(135deg, #F1F4EDff, #001014ff, #919C98ff, #665333ff, #42433Dff);
+$gradient-top-left: linear-gradient(225deg, #F1F4EDff, #001014ff, #919C98ff, #665333ff, #42433Dff);
+$gradient-bottom-left: linear-gradient(315deg, #F1F4EDff, #001014ff, #919C98ff, #665333ff, #42433Dff);
+$gradient-radial: radial-gradient(#F1F4EDff, #001014ff, #919C98ff, #665333ff, #42433Dff);	
+}
+
+html {
+	scroll-behavior: smooth;
+}
